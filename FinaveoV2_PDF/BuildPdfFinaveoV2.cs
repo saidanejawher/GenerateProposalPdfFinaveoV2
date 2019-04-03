@@ -211,6 +211,7 @@ namespace FinaveoV2_PDF
                             var pages = reader.NumberOfPages;
                             for (var i = 1; i <= pages; i++)
                             {
+                                // doc.SetPageSize(PageSize.A4.Rotate()); // Merge pdf mode paysage : 
                                 doc.SetPageSize(PageSize.A4);
                                 doc.NewPage();
                                 var page = writer.GetImportedPage(reader, i);
