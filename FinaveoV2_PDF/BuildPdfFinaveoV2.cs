@@ -179,7 +179,7 @@ namespace FinaveoV2_PDF
 
             try
             {
-                byte[] all;
+                byte[] all; 
 
                 using (var ms = new MemoryStream())
                 {
